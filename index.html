@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo y Paclo</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000000, #1a1a1a);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        header {
+            animation: slideDown 1s ease-in-out;
+            padding: 20px;
+            background: radial-gradient(circle, red, black);
+            border-bottom: 4px solid red;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+        }
+        .content {
+            animation: fadeIn 2s ease-in-out;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+        }
+        .movie-poster {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+        }
+        .movie-poster:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 25px rgba(255, 0, 0, 1);
+        }
+        .warning {
+            background: red;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+        }
+        .villains {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .villain {
+            background: rgba(255, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+        }
+        .villain:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pablo y Paclo</h1>
+        <h2>Un thriller de acción sin límites</h2>
+    </header>
+    
+    <div class="content">
+        <img src="https://i.imgur.com/HdFQVFu.jpeg" alt="Póster de Pablo y Paclo" class="movie-poster">
+        
+        <div class="warning">
+            <p><strong>¡ATENCIÓN!</strong> Esta película no se encuentra en ningún otro sitio. Es un archivo exclusivo, rescatado antes de ser eliminado de la red. Su acceso podría ser restringido en cualquier momento. Esto pasó debido al pirateo de la página donde salíamos, pero <strong>Pablo y Paclo 5</strong> va a salir en un futuro, así que tranquilos. Cualquier novedad, solo la encontrarás aquí.</p>
+        </div>
+
+        <h2>Villanos Principales</h2>
+        <div class="villains">
+            <div class="villain">
+                <img src="https://i.imgur.com/aSLPwMI.png" alt="Villano Martín" class="movie-poster">
+                <h3>Martín</h3>
+                <p>Un hombre frío y calculador, dispuesto a todo para conseguir lo que quiere.</p>
+            </div>
+            <div class="villain">
+                <img src="https://i.imgur.com/G9A7BkF.png" alt="Villano Victor" class="movie-poster">
+                <h3>Victor</h3>
+                <p>Un hombre misterioso con un pasado oscuro que lo convierte en una amenaza constante.</p>
+            </div>
+        </div>
+
+        <h2>La Historia de la Saga</h2>
+        <p>La saga *Pablo y Paclo* comenzó en 2017, con el objetivo de ofrecer una experiencia cinematográfica única. Cada entrega ha sido innovadora en su narrativa y efectos visuales, manteniendo una base de seguidores fieles. Con cuatro películas previas y una quinta en camino, esta franquicia se ha convertido en un fenómeno de culto.</p>
+
+        <h2>Sobre el Creador</h2>
+        <p>William Larsson, un visionario director y productor sueco, ideó *Pablo y Paclo* como un proyecto que desafiaría los límites del cine animado con realismo extremo. Su enfoque en el detalle y la acción ha hecho que la saga se distinga como una de las más intensas y emocionantes de los últimos años.</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 *Pablo y Paclo* - Creado por William Larsson (Suecia)</p>
+    </footer>
+</body>
+</html>
